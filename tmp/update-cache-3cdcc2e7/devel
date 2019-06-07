@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:fb="http://ogp.me/ns/fb#"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"
+  xmlns:product="http://ogp.me/ns/product#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="MobileOptimized" content="width" />
+  <!--[if IE]><![endif]-->
+<link rel="preconnect" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="preconnect" href="//fonts.gstatic.com" crossorigin="" />
+<link rel="dns-prefetch" href="//fonts.gstatic.com" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+<link rel="preconnect" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="//stats.g.doubleclick.net" />
+<link rel="preconnect" href="//stats.g.doubleclick.net" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XAcEV19XGwcCUldTDwg="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(18),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(19),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var x=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof x&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof x&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(21)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(21)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(21)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(21)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(b?b.then(a):w?w(a):(E=-E,R.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(21)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var x=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(){var t=window.NREUM,n=t.info.accountID||null,e=t.info.agentID||null,r=t.info.trustKey||null,i="btoa"in window&&"function"==typeof window.btoa;if(!n||!e||!i)return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:e,id:o.generateCatId(),tr:o.generateCatId(),ti:Date.now()}};return r&&n!==r&&(a.d.tk=r),btoa(JSON.stringify(a))}var o=t(16);n.exports={generateTraceHeader:r}},{}],11:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(l[r],this.listener,!1);n.aborted||(e.duration=s.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==n.status&&(n.status=0):a(this,t),e.cbTime=this.cbTime,d.emit("xhr-done",[t],t),c("xhr",[n,e,this.startTime]))}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return w(r)}function i(t,n){var e=f(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}function a(t,n){t.params.status=n.status;var e=o(n,t.lastSize);if(e&&(t.metrics.rxSize=e),t.sameOrigin){var r=n.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(12),u=t(10).generateTraceHeader,d=t("ee"),l=["load","error","abort","timeout"],p=l.length,h=t("id"),m=t(15),w=t(14),v=window.XMLHttpRequest;s.features.xhr=!0,t(9),d.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,n.loadCaptureCalled=!1,t.addEventListener("load",function(e){a(n,t)},!1),m&&(m>34||m<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),d.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),d.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var e=!1;if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(e=!!NREUM.init.distributed_tracing.enabled),e&&this.sameOrigin){var r=u();r&&n.setRequestHeader("newrelic",r)}}),d.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=w(r);i&&(e.txSize=i)}this.startTime=s.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{d.emit("internal-error",[e])}catch(r){}}};for(var a=0;a<p;a++)n.addEventListener(l[a],this.listener,!1)}),d.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),d.on("xhr-load-added",function(t,n){var e=""+h(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),d.on("xhr-load-removed",function(t,n){var e=""+h(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),d.on("addEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&d.emit("xhr-load-added",[t[1],t[2]],n)}),d.on("removeEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&d.emit("xhr-load-removed",[t[1],t[2]],n)}),d.on("fn-start",function(t,n,e){n instanceof v&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=s.now()))}),d.on("fn-end",function(t,n){this.xhrCbStart&&d.emit("xhr-cb-time",[s.now()-this.xhrCbStart,this.onload,n],n)})}},{}],12:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],13:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(18),s=t(19),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t,n){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,n])}},{}],14:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],15:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],16:[function(t,n,e){function r(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(n=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(n=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}n.exports={generateUuid:r,generateCatId:o}},{}],17:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],18:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],19:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],20:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],21:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(19),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[g[e]];return d&&d.push([x,e,r,a]),a}}function p(t,n){y[t]=m(t).concat(n)}function h(t,n){var e=y[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return y[t]||[]}function w(t){return d[t]=d[t]||o(e)}function v(t,n){f(t,function(t,e){n=n||"feature",g[e]=n,n in u||(u[n]=[])})}var y={},g={},x={on:p,addEventListener:p,removeEventListener:h,emit:e,get:w,listeners:m,context:n,buffer:v,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(18),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=b.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(g,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return R.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(18),u=t("ee"),d=t(17),l=window,p=l.document,h="addEventListener",m="attachEvent",w=l.XMLHttpRequest,v=w&&w.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:w,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var y=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1123.min.js"},x=w&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:x,userAgent:d};t(13),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,R=t(20)},{}]},{},["loader",2,11,4,3]);</script>
+<meta name="description" content="We recommend upgrading to the 2.x branch as soon as possible. The Execute PHP feature has been removed from that branch. If you still wish to use that feature, see https://www.drupal.org/project/devel_php. A suite of modules containing fun for module developers and themers ..." />
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
+<link rel="canonical" href="https://www.drupal.org/project/devel" />
+<link rel="shortlink" href="https://www.drupal.org/node/3236" />
+<meta property="og:site_name" content="Drupal.org" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.drupal.org/project/devel" />
+<meta property="og:title" content="Devel" />
+<meta property="og:description" content="We recommend upgrading to the 2.x branch as soon as possible. The Execute PHP feature has been removed from that branch. If you still wish to use that feature, see https://www.drupal.org/project/devel_php. A suite of modules containing fun for module developers and themers ..." />
+<meta property="og:updated_time" content="2019-03-10T11:26:49+00:00" />
+<meta property="article:published_time" content="2003-09-28T16:44:31+00:00" />
+<meta property="article:modified_time" content="2019-03-10T11:26:49+00:00" />
+  <title>Devel | Drupal.org</title>
+  <link type="text/css" rel="stylesheet" href="/files/advagg_css/css__BJ6Ou6QsBRtnFTmxaakamOIS8n4QswDP2XnnZ1sxtaM__NBuvkP6eInGIkb1aJvUHx5PX79XApuxBDkk_77W5tYk__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__pb75Es3Qz_6dc5qRXFfBteLW3eKMf92-wDXx91C4Sts__x4ZhO-JDmwub5A-5im8235wCAhkc5qH6jmjVPMhMrYc__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__rxlkNswgFNTxNaSPriAIXx4ZlwBOB3RlBPezSG6R9_M__VHgdJ4r9tHl_YrvPjndJ9qh877SF9D0BV0kuzFGik7Y__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css___gHaOfUPGMp9CmQToCayUOFNYCWkA0HSxl7r-Dtt9XI__lDrzWssmRvNcI9hewNcBnrsFz4QXcfZIDU6MaYNjq9k__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__VB5ewlXzRLK9G8c-SdackBhY4Kx6j7ZyCsGRWIjDFGo__qe-bB54HYzCh2FGCe62WdrVkshNF02DQLj9u3C7yZR4__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__rQ1alF2wtRJheC4MwbTGQHhDW1u3JWtM73MeXej8ZCI__p-VwQIrVeejdBOjfXDxhLZnsUhKi1r9hCeECIryJwZU__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__P6IUplZtg49jjx07vmYslkCOrJk37PuZ8DFTyLCIKxA__8WLLw30TFGwdXXi2OebbkVNSWKTWS5dEWLp7rfHtS28__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__8f1mYXI7glGDMs7Bx9TxdVZ8Q_aBetDl5aUglGDF004__-2CRiB16jOVlO1XcWAWhaWWluW3Lxo4Jhywz0oIiHkk__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__IND9Ea9cZJoyPbSkNshnqYv4c5MRWiCE06f8uY8qHPM__P6MQmonPAG9EwAkymq3qjeHUqjIQEfCps7JxljLqlUY__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__TfWyVKLagmeJkncT3LJJUcy3ESr1XKJqq3qz5tUtuGU__bQx6iO0FF7UXuwKRSbHWGshBIcB7PlbuJGcaPCIKHf4__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__v9yeCzgz7qs8Fbr-QWlDypB0PqI80y3jvDguhVToBCA__peMydGxnw5J-npl9TiHeBlNB52l8AUr_JLg6cBT-Ou4__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__vxxEWlql3uJOE6SxuswbSiGtjIUhlDGIEtXZIFy_4eA__njDte1-1p-4WUxWOGLZtP2bTegQenK3SjG9O1EutGl4__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__eFKSCujfWyJYO8J-qSi6T_n29lROS8isvrxzANeHaAY__D_EUHDAfEQdxcLiSDY7hREUWkG1Ge56_h2z3Er8V188__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__mXUsFOkFX1Vp3cPaBtPrMNLiyy4rOzIAVz7DppnovsY__4a32sD5wTTMzrJf7XqA8yck7wVaHdAmb-RLMBilVXyY__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__WF0PRotZAhCcl0aJjY5W2LYj8UwiYuB2dZEFluOh3Tc__FviX13FUB-Ppa2XB29BUIJQZ1Wg-F5XiDE7XD5y7mjQ__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__oQGQfQQIWi-LcJC6vkFZVnv3p_o6ltSSrXQCapWoCz4__RGE_JBatOGfZBhGnTFb10FAjwRCH9xr4MJxqyb9o96Y__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="/files/advagg_css/css__QPp1snPjYt_xYr0c_V0IORcEElkIUBBBrvOB4ZE0Gnw__FoQP0u3QQHwQoM3fecUgTapnHY8gaTKYAJ0KIJ8L7_I__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.css" media="all" />
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var preconnect_support = false; try {if (document.createElement("link").relList.supports("preconnect")) {preconnect_support = true;}} catch (e) {} if (!preconnect_support) { var prefetch = document.createElement("link"); prefetch.href = "https://stats.g.doubleclick.net/robots.txt"; prefetch.rel="prefetch"; document.getElementsByTagName("head")[0].appendChild(prefetch);}
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,r){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date()})(window,document,"script","ga");ga("create", "UA-2360451-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("set", "dimension3", "anonymous user");ga("set", "dimension4", "Module project");ga("set", "dimension2", "downloads");ga("send", "pageview");
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in two-sidebars page-node page-node- page-node-3236 node-type-project-module drupalorg-site-main" >
+  <div id="skip-link">
+    <a class="element-invisible element-focusable" href="#content">Skip to main content</a>
+    <a class="element-invisible element-focusable skip-link-search" href="#search-block-form">Skip to search</a>
+  </div>
+        <div id="nav-header">
+    <div class="menu-nav">
+      <a class="nav-btn" id="nav-open-btn" href="#block-system-main-menu"><img src="/sites/all/themes/bluecheese/images/icon-w-menu.svg" alt="Main menu"></a>
+    </div>
+    <nav id="navigation-inner" class="container-12" role="navigation">
+        <div class="region region-navigation">
+    <div id="block-system-main-menu" class="block block-system block-menu">
+<div class="block-inner">
+    
+  <div class="content">
+    <div class="menu-block"><ul class="menu button"><li class="first leaf"><a href="/home" title="Drupal.org home page">Drupal.org home</a></li>
+<li class="expanded"><a href="/about" title="">Why Drupal?</a><div class="menu-block"><ul class="menu button"><li class="first leaf"><a href="/developers" title="">For developers</a></li>
+<li class="leaf"><a href="/marketers" title="Why marketers should choose Drupal for their ambitious digital experiences">For marketers</a></li>
+<li class="leaf"><a href="/agencies" title="Learn why agencies are betting their future on Drupal">For agencies</a></li>
+<li class="leaf"><a href="/case-studies" title="View case studies to see how your peers have built success on Drupal">Case studies</a></li>
+<li class="leaf"><a href="/8" title="Haven&#039;t looked at Drupal in a while? Learn about the dramatic changes in Drupal 8">What&#039;s new in D8?</a></li>
+<li class="leaf"><a href="/about" title="Learn about Drupal">About Drupal</a></li>
+<li class="last leaf"><a href="/about/in-the-news" title="">In the news</a></li>
+</ul></div></li>
+<li class="expanded"><a href="/download" title="Build your solution on Drupal">Build</a><div class="menu-block"><ul class="menu button"><li class="first leaf"><a href="/download" title="Download and Extend Drupal">Download &amp; Extend</a></li>
+<li class="leaf"><a href="https://git.drupalcode.org/project/drupal" title="">Browse Repository</a></li>
+<li class="leaf"><a href="/documentation" title="">Documentation</a></li>
+<li class="leaf"><a href="/project/modules" title="Find modules to extend Drupal to meet any need">Modules</a></li>
+<li class="leaf"><a href="/project/themes" title="Browse themes as a starting point for making your Drupal site your own">Themes</a></li>
+<li class="leaf"><a href="/project/distributions" title="Use a distribution to start with a version of Drupal customized to purpose">Distributions</a></li>
+<li class="leaf"><a href="/project/issues" title="Dive into the issues queues and contribute back to Drupal">Issue queues</a></li>
+<li class="last leaf"><a href="/about/strategic-initiatives" title="">Strategic Initiatives</a></li>
+</ul></div></li>
+<li class="expanded"><a href="/industries" title="Examples of solutions built on Drupal">Solutions</a><div class="menu-block"><ul class="menu button"><li class="first leaf"><a href="/industries" title="Learn why Drupal is the best solution for your industry">By industry</a></li>
+<li class="leaf"><a href="/case-studies" title="View Drupal success stories">Case studies</a></li>
+<li class="last leaf"><a href="/hosting" title="Find a solution for hosting your Drupal application">For hosting</a></li>
+</ul></div></li>
+<li class="expanded"><a href="/drupal-services" title="Buy Drupal Products and Services">Services</a><div class="menu-block"><ul class="menu button"><li class="first leaf"><a href="/drupal-services" title="View the Drupal service provider marketplace">Marketplace</a></li>
+<li class="leaf"><a href="/hosting" title="Find trusted Drupal hosting providers">Hosting</a></li>
+<li class="last leaf"><a href="/training" title="Find expert Drupal training">Training</a></li>
+</ul></div></li>
+<li class="expanded"><a href="/community" title="Drupal Community">Community</a><div class="menu-block"><ul class="menu button"><li class="first leaf"><a href="/community" title="View the community portal and find all the ways you can contribute to Drupal">Portal</a></li>
+<li class="leaf"><a href="/getting-involved" title="Read the getting involved guide to learn where you can make the most impact">Getting involved</a></li>
+<li class="leaf"><a href="/organizations" title="Learn about the organizations that are part of the Drupal ecosystem">Organizations</a></li>
+<li class="leaf"><a href="/forum" title="Find support or chat with the community on the forum">Forum</a></li>
+<li class="last leaf"><a href="/community/agency-marketing/promotedrupal" title="">Promote Drupal</a></li>
+</ul></div></li>
+<li class="expanded"><a href="/documentation" title="Resources to help you on your Drupal journey">Resources</a><div class="menu-block"><ul class="menu button"><li class="first leaf"><a href="/docs/user_guide/en/index.html" title="The Drupal 8 user guide will get you up to speed in no time">User guide</a></li>
+<li class="leaf"><a href="/documentation" title="Drupal Documentation">Documentation</a></li>
+<li class="leaf"><a href="/support" title="Support for using Drupal">Support</a></li>
+<li class="leaf"><a href="/security" title="Find information about security releases for Drupal">Security</a></li>
+<li class="leaf"><a href="https://jobs.drupal.org/" title="Drupal Jobs">Jobs</a></li>
+<li class="leaf"><a href="https://events.drupal.org" title="Learn about official Drupal Association events">Events</a></li>
+<li class="leaf"><a href="/news" title="News about the Drupal ecosystem">Project News</a></li>
+<li class="last leaf"><a href="/association/supporters/press" title="News and press releases from Drupal Association supporting partners">Partner Press</a></li>
+</ul></div></li>
+<li class="expanded"><a href="/association" title="About the Drupal Association - the non-profit that supports the Drupal project">Association</a><div class="menu-block"><ul class="menu button"><li class="first leaf"><a href="/association" title="Learn about the Drupal Association - the nonprofit that supports the Drupal project">Drupal Association</a></li>
+<li class="leaf"><a href="/association/supporters" title="Learn more about the organizations that support the Drupal Association and our mission">Supporters</a></li>
+<li class="leaf"><a href="/promotedrupal" title="">Promote Drupal</a></li>
+<li class="leaf"><a href="/association/support" title="We depend on you to move the Drupal project forward">Join us</a></li>
+<li class="last leaf"><a href="/drupalorg" title="">About Drupal.org</a></li>
+</ul></div></li>
+<li class="last expanded"><a href="/try-drupal" title="Try Drupal">Try Drupal</a><div class="menu-block"><ul class="menu button"><li class="first leaf"><a href="/try-drupal" title="Demo Drupal online with a Drupal platform partner">Demo online</a></li>
+<li class="last leaf"><a href="/download" title="">Download</a></li>
+</ul></div></li>
+</ul></div><a class="close-btn" href="#top">Return to content</a>  </div>
+  </div>
+</div>
+<div id="block-system-user-menu" class="block block-system block-menu">
+<div class="block-inner">
+    
+  <div class="content">
+    <div class="menu-block"><ul class="menu"><li class="button default"><a href="#block-system-user-menu"><img src="https://www.drupal.org/sites/all/themes/bluecheese/images/icon-w-user.svg" alt="Log in, view profile, and more"></a><ul><li class="first leaf"><a href="/user/login?destination=node/3236" title="">Log in</a></li>
+<li class="last leaf"><a href="/user/register?destination=node/3236" title="">Create account</a></li>
+</ul></li></ul></div>  </div>
+  </div>
+</div>
+<div id="block-search-form" class="block block-search">
+<div class="block-inner">
+    
+  <div class="content">
+    <form action="/project/devel" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input placeholder="Search…" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input alt="Search" type="image" id="edit-submit" name="submit" value="Search" src="/sites/all/themes/bluecheese/images/icon-w-search.svg" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-kImBr0feQcni8hy34CT8CTVo6IqLW1AgLreBEg9yYtE" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+  </div>
+</div>
+  </div>
+    </nav>
+  </div>
+
+    <div id="header" class="clearfix">
+    <div id="header-inner" class="container-12 clearfix">
+      <div id="header-left">
+        <div id="site-name"><a href="/" title="Drupal"><img src="https://www.drupal.org/files/drupal-wordmark.svg" alt="Drupal" /></a></div>
+              </div>
+      <div id="header-right">
+              </div>
+    </div>
+  </div>
+  
+  
+  <div id="page" class="clearfix">
+    <div id="page-heading">
+                    <div id="page-title-tools" class="container-12 clearfix" role="navigation">
+
+          <div class="page-title-wrapper">
+                                          <div id="page-title" class="h2">Download &amp; Extend</div>
+                                    </div>
+
+                  </div> <!-- /#page-title-tools -->
+
+                  <div id="nav-content" class="container-12">
+            <ul class="links"><li class="core first"><a href="/project/drupal">Drupal Core</a></li>
+<li class="distributions"><a href="/project/project_distribution">Distributions</a></li>
+<li class="modules active"><a href="/project/project_module" class="active">Modules</a></li>
+<li class="themes last"><a href="/project/project_theme">Themes</a></li>
+</ul>          </div> <!-- /#nav-content -->
+        
+        <div class="breadbox"></div>
+
+                  <h1 id="page-subtitle" class="container-12">Devel</h1>
+        
+      
+    </div> <!-- /#page-heading -->
+
+          <div id="tabs" class="clearfix container-12">
+        <h2 class="element-invisible">Primary tabs</h2><ul class="tabs primary clearfix"><li class="active"><a href="/project/devel" class="active">View<span class="element-invisible">(active tab)</span></a></li>
+<li><a href="/project/devel/git-instructions">Version control</a></li>
+<li><a href="/node/3236/qa">Automated testing</a></li>
+</ul>      </div> <!-- /#tabs -->
+    
+    <div class="container-12 page-inner">              <div id="sidebar-first" role="complementary" >
+          <div id="sidebar-first-region">
+              <div class="region region-sidebar-first">
+    <div id="block-drupalorg-project-follow" class="block block-drupalorg">
+<div class="block-inner">
+    
+  <div class="content">
+    <span><a href="/user?destination=node/3236" class="log-in-to-star" title="Log in to star projects">122<span class="element-invisible"> people starred this project</span></a></span>  </div>
+  </div>
+</div>
+  </div>
+          </div> <!-- /#column-right-region-first -->
+        </div> <!-- /#column-right-first -->
+      
+      <div id="main" role="main">
+        
+        <div id="content" class="clearfix">
+                                        <div id="content-inner" class="clearfix">  <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+<div class="block-inner">
+    
+  <div class="content">
+    <div id="node-3236" class="node node-project-module node-content-3236 clearfix">
+
+  
+      
+      <div class="submitted">
+      Posted by <a href="/u/moshe-weitzman" title="View user profile." data-uid="23" class="username">moshe weitzman</a> on <time pubdate datetime="1064767471">28 September 2003</time>, updated <time pubdate datetime="1552217209">10 March 2019</time>    </div>
+  
+  <div class="content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p><em>We recommend upgrading to the 2.x branch as soon as possible. The Execute PHP feature has been removed from that branch. If you still wish to use that feature, see <a href="https://www.drupal.org/project/devel_php" rel="nofollow">https://www.drupal.org/project/devel_php</a>.</em></p>
+<p>A suite of modules containing fun for module developers and themers ...</p>
+<!--break--><h4>Devel</h4>
+<ul><li>Helper functions for Drupal developers and inquisitive admins.</li>
+<li>Enable the included Kint submodule as for pretty print of variables. <code class="language-php">kint($array)</code> function is provided, which pretty prints arrays. Useful during development. Similarly, a <code class="language-php">ddebug_backtrace()</code> is offerred.</li>
+<li>much more. <a href="http://ratatosk.net/drupal/tutorials/debugging-drupal.html" rel="nofollow">See this helpful demo page.</a></li>
+</ul><h4>Generate content</h4>
+<p>Accelerate development of your site or module by quickly generating nodes, comments, terms, users, and more.</p>
+<h4>WebProfiler (D8+)</h4>
+<p>Add a powerful footer to all pages of your site. There, admins can review resource utilization, cache effectiveness, database queries, Views, and so much more. Sponsored by <a href="http://www.wellnet.it/" rel="nofollow">Wellnet</a></p>
+<h4>Devel Node Access (DNA)</h4>
+<p>View the node access entries for the node(s) that are shown on a page. Essential for developers of node access modules and useful for site admins in debugging problems with those modules.<br />
+DNA for D8 has temporarily moved to <a href="/project/devel_node_access" rel="nofollow">its own project</a> until it's ready.</p></div></div></div><div class="field field-name-field-supporting-organizations field-type-field-collection field-label-above"><div class="field-label">Supporting organizations:&nbsp;</div><div class="field-items"><div class="field-item even"><div class="entity entity-field-collection-item field-collection-item-field-supporting-organizations clearfix">
+  <div class="content">
+    <div class="field field-name-field-supporting-organization field-type-entityreference field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/wellnet-srl">WELLNET S.r.l.</a></div></div></div><div class="field field-name-field-how-they-helped field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">Sponsor of WebProfiler</div></div></div>  </div>
+</div>
+</div><div class="field-item odd"><div class="entity entity-field-collection-item field-collection-item-field-supporting-organizations clearfix">
+  <div class="content">
+    <div class="field field-name-field-supporting-organization field-type-entityreference field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/salvisberg-software-consulting">Salvisberg Software &amp; Consulting</a></div></div></div><div class="field field-name-field-how-they-helped field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">sponsors development and maintenance</div></div></div>  </div>
+</div>
+</div></div></div><h3>Project information</h3><ul class="project-info"><li>Module categories: <a href="/project/project_module?f%5B2%5D=im_vid_3%3A53">Administration</a>, <a href="/project/project_module?f%5B2%5D=im_vid_3%3A59">Developer</a>, <a href="/project/project_module?f%5B2%5D=im_vid_3%3A4654">Drush</a>, <a href="/project/project_module?f%5B2%5D=im_vid_3%3A75">Utility</a></li><li><img src="/sites/all/modules/drupalorg/drupalorg/images/chart-black.svg" alt="chart icon" class="icon-left gray"><a href="/project/usage/devel"><strong>227,674</strong> sites report using this module</a><br><small>6,220,837 downloads</small></li><li><img src="/sites/all/modules/drupalorg/drupalorg/images/shield-icon-black.svg" alt="shield" class="icon-left gray">Stable releases for this project are covered by the <a href="/security-advisory-policy">security advisory policy</a>.<br>Look for the shield icon below.</li></ul><h3>Downloads</h3><div class="view view-drupalorg-project-downloads view-id-drupalorg_project_downloads view-display-id-recommended view-project-release-download-table view-dom-id-475301a0780368003037855d67dab99f">
+        
+  
+  
+      <div class="view-content">
+        <div class="release recommended-Yes security-covered">
+      
+  <span class="views-field views-field-field-release-version">        <strong class="field-content"><a href="https://www.drupal.org/project/devel/releases/8.x-2.1" title="View release notes">8.x-2.1</a></strong>  </span>  
+  <span class="security-covered">        <span><img src="/sites/all/modules/drupalorg/drupalorg/images/shield-icon-black.svg" alt="Stable release covered by the Drupal Security Team" title="Stable release covered by the Drupal Security Team"></span>  </span>  
+  <span class="views-field views-field-timestamp">        <span class="field-content"><small>released 2 May 2019</small></span>  </span>  
+  <div>        <small>✓ Recommended by the project’s maintainer.</small>  </div>  
+  <div class="views-field views-field-extension">        <span class="field-content">⬇ <span class="element-invisible">Download</span> <a href="https://ftp.drupal.org/files/projects/devel-8.x-2.1.tar.gz">tar.gz <small>(231.68 KB)</small></a> | <a href="https://ftp.drupal.org/files/projects/devel-8.x-2.1.zip">zip <small>(424.59 KB)</small></a></span>  </div>  
+  <div class="release-info">        <p>Development version: <a href="/project/devel/releases/8.x-2.x-dev">8.x-2.x-dev</a> <small>updated 8 May 2019 at 10:08 UTC</small></p><ul class="pift-ci-tests"><li class="pift-ci-complete pift-ci-pass">Testing result: <a href="/pift-ci-job/1284394" class="test">PHP 7 &amp; MySQL 5.5, D8.7.0 72 pass</a> <a href="/node/3236/qa">all results</a></li> </ul>  </div>  </div>
+  <div class="release recommended-Yes security-covered">
+      
+  <span class="views-field views-field-field-release-version">        <strong class="field-content"><a href="https://www.drupal.org/project/devel/releases/7.x-1.7" title="View release notes">7.x-1.7</a></strong>  </span>  
+  <span class="security-covered">        <span><img src="/sites/all/modules/drupalorg/drupalorg/images/shield-icon-black.svg" alt="Stable release covered by the Drupal Security Team" title="Stable release covered by the Drupal Security Team"></span>  </span>  
+  <span class="views-field views-field-timestamp">        <span class="field-content"><small>released 22 February 2019</small></span>  </span>  
+  <div>        <small>✓ Recommended by the project’s maintainer.</small>  </div>  
+  <div>        <p>Fix dpm()/Krumo and prepare for &#039;Run cron&#039; fix in Core.</p>  </div>  
+  <div class="views-field views-field-extension">        <span class="field-content">⬇ <span class="element-invisible">Download</span> <a href="https://ftp.drupal.org/files/projects/devel-7.x-1.7.tar.gz">tar.gz <small>(189.37 KB)</small></a> | <a href="https://ftp.drupal.org/files/projects/devel-7.x-1.7.zip">zip <small>(243.26 KB)</small></a></span>  </div>  
+  <div class="release-info">        <p>Development version: <a href="/project/devel/releases/7.x-1.x-dev">7.x-1.x-dev</a> <small>updated 22 Feb 2019 at 15:53 UTC</small></p><ul class="pift-ci-tests"><li class="pift-ci-complete pift-ci-pass pift-ci-issue">Testing result: <a href="/pift-ci-job/1208495" class="test">PHP 7.1 &amp; MySQL 5.6, D7 3 pass</a> <a href="/node/3236/qa">all results</a></li> </ul>  </div>  </div>
+    </div>
+  
+  
+      <div class="attachment attachment-after">
+      <div class="view view-drupalorg-project-downloads view-id-drupalorg_project_downloads view-display-id-security view-project-release-download-table">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  
+  
+      <div class="view-footer">
+      <div class="view view-drupalorg-project-downloads view-id-drupalorg_project_downloads view-display-id-development view-project-release-download-table view-dom-id-ab1572f5c25d560c106942056c20803e">
+        
+  
+  
+      <div class="view-content">
+        <div class="release recommended--recommended security--drupalorg-security-coverage">
+      </div>
+  <div class="release recommended--recommended security--drupalorg-security-coverage">
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  
+  
+</div><ul class="links"><li class="view_all_releases first last"><a href="/project/devel/releases">View all releases</a></li>
+</ul>  </div>
+
+  <div class="node-footer"></div>
+
+</div>
+
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+                  </div> <!-- /#content -->
+
+      </div> <!-- /#column-left -->
+
+              <div id="aside" role="complementary" >
+          <div id="aside-region">
+              <div class="region region-sidebar-second">
+    <div id="block-versioncontrol-project-project-maintainers" class="block block-versioncontrol-project">
+<div class="block-inner">
+    <h2>Maintainers for Devel</h2>
+  
+  <div class="content">
+    <div class="item-list"><ul><li class="first"><li><div class="vc-user"><a href="/u/moshe-weitzman" title="View user profile." data-uid="23" class="username">moshe weitzman</a> - <span class="vc-commits">1083 commits</span></div><div class="vc-commit-times">last: 1 month ago, first: 16 years ago</div></li></li>
+<li><li><div class="vc-user"><a href="/u/willzyx" title="View user profile." data-uid="1043862" class="username">willzyx</a> - <span class="vc-commits">152 commits</span></div><div class="vc-commit-times">last: 1 month ago, first: 4 years ago</div></li></li>
+<li><li><div class="vc-user"><a href="/u/salvis" title="View user profile." data-uid="82964" class="username">salvis</a> - <span class="vc-commits">406 commits</span></div><div class="vc-commit-times">last: 1 month ago, first: 11 years ago</div></li></li>
+<li><li><div class="vc-user"><a href="/u/lussoluca" title="View user profile." data-uid="138068" class="username">lussoluca</a> - <span class="vc-commits">72 commits</span></div><div class="vc-commit-times">last: 2 months ago, first: 3 years ago</div></li></li>
+<li class="last"><li><div class="vc-user"><a href="/u/pcambra" title="View user profile." data-uid="122101" class="username">pcambra</a> - <span class="vc-commits">68 commits</span></div><div class="vc-commit-times">last: 4 years ago, first: 6 years ago</div></li></li>
+</ul></div><div id="project-committers"><a href="/node/3236/committers">View all committers</a></div><div id="project-commits"><a href="/node/3236/commits">View commits</a></div>  </div>
+  </div>
+</div>
+<div id="block-project-issue-issue-cockpit" class="block block-project-issue">
+<div class="block-inner">
+    <h2>Issues for Devel</h2>
+  
+  <div class="content">
+    To avoid duplicates, please search before submitting a new issue.
+  <form action="/project/issues/devel" method="get" id="project-issue-issue-cockpit-searchbox" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-text">
+  <label class="element-invisible" for="edit-text">Search </label>
+ <input type="text" id="edit-text" name="text" value="" size="20" maxlength="128" class="form-text" />
+</div>
+<input type="hidden" name="status" value="All" />
+<input type="submit" id="edit-submit--2" name="" value="Search" class="form-submit" /><a href="/project/issues/search/devel">Advanced search</a></div></form>  <div class="issue-cockpit-categories">
+          <div class="issue-cockpit-All">
+        <h3>All issues</h3>
+        <div class="issue-cockpit-totals">
+          <a href="/project/issues/devel?categories=All">121 open</a>,
+                                    <a href="/project/issues/devel?categories=All&amp;status=14">2 <abbr title="Reviewed & tested by the community">RTBC</abbr></a>,
+                                <a href="/project/issues/devel?status=All&amp;categories=All">2,497 total</a>        </div>
+      </div>
+          <div class="issue-cockpit-1">
+        <h3>Bug report</h3>
+        <div class="issue-cockpit-totals">
+          <a href="/project/issues/devel?categories=1">35 open</a>,
+                                          <a href="/project/issues/devel?status=All&amp;categories=1">1,355 total</a>        </div>
+      </div>
+      </div>
+
+  <div class="issue-cockpit-subscribe">
+      </div>
+
+      <div class="issue-cockpit-metrics">
+      <h3>Statistics</h3>
+      <div class="metric-container"><span class="metric-label">New issues</span><div class="view view-project-issue-metrics-new-issues view-id-project_issue_metrics_new_issues view-display-id-default project-issue-sparkline view-dom-id-e4e77c95c4c9f46d82620fcbc1bb470c">
+        
+  
+  
+      <div class="view-content">
+      <div  id="view-d3-vis-e4e77c95c4c9f46d82620fcbc1bb470c" class="d3 sparkline"></div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div></div><div class="metric-container"><span class="metric-label">Response rate</span><div class="view view-project-issue-metrics-response-rate view-id-project_issue_metrics_response_rate view-display-id-default project-issue-sparkline view-dom-id-f31ba0cb6ecdd3ef6b96f1385ea68efe">
+        
+  
+  
+      <div class="view-content">
+      <div  id="view-d3-vis-f31ba0cb6ecdd3ef6b96f1385ea68efe" class="d3 sparkline"></div>
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      %    </div>
+  
+  
+</div></div><div class="metric-container"><span class="metric-label">1st response</span><div class="view view-project-issue-metrics-first-response view-id-project_issue_metrics_first_response view-display-id-default project-issue-sparkline view-dom-id-8cb799e019642657c7c325e2bcbd8c57">
+        
+  
+  
+      <div class="view-content">
+      <div  id="view-d3-vis-8cb799e019642657c7c325e2bcbd8c57" class="d3 sparkline"></div>
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+      <small>hours</small>    </div>
+  
+  
+</div></div><div class="metric-container"><span class="metric-label">Open bugs</span><div class="view view-project-issue-metrics-open-bugs view-id-project_issue_metrics_open_bugs view-display-id-default project-issue-sparkline view-dom-id-338eb279a55b7584f3449db97c66dea2">
+        
+  
+  
+      <div class="view-content">
+      <div  id="view-d3-vis-338eb279a55b7584f3449db97c66dea2" class="d3 sparkline"></div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div></div><div class="metric-container"><span class="metric-label">Participants</span><div class="view view-project-issue-metrics-participants view-id-project_issue_metrics_participants view-display-id-default project-issue-sparkline view-dom-id-4f7e7aa7e7b65a320e4f056ac35eb701">
+        
+  
+  
+      <div class="view-content">
+      <div  id="view-d3-vis-4f7e7aa7e7b65a320e4f056ac35eb701" class="d3 sparkline"></div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div></div>      <div><small>2 year graph, updates weekly</small></div>
+    </div>
+    </div>
+  </div>
+</div>
+<div id="block-views-340b55c4bdeafae57e798c2c9e5bc622" class="block block-views">
+<div class="block-inner">
+    <h2>Documentation</h2>
+  
+  <div class="content">
+    <div class="view view-documentation-project-page-doc-list view-id-documentation_project_page_doc_list view-display-id-project_documentation_block view-dom-id-d98223010696b7a2960507f58706ccd8">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul class="links">          <li class="">  
+          <a href="/docs/7/modules/devel">Devel 7.x</a>  </li>
+          <li class="">  
+          <a href="/docs/8/modules/devel">Devel 8.x</a>  </li>
+      </ul></div>    </div>
+  
+  
+      <div class="attachment attachment-after">
+      <div class="view view-documentation-project-page-doc-list view-id-documentation_project_page_doc_list view-display-id-attachment_1">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul class="links">          <li class=""></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  
+  
+  
+  
+</div>  </div>
+  </div>
+</div>
+<div id="block-drupalorg-project-resources" class="block block-drupalorg-project">
+<div class="block-inner">
+    <h2>Resources</h2>
+  
+  <div class="content">
+    <ul class="links"><li class="0 first"><a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">Read license</a></li>
+<li class="1"><a href="http://cyrve.com/screenshots/devel_theme_snap-20080113-205127.jpg">Look at screenshots</a></li>
+<li class="2"><a href="http://localize.drupal.org/translate/projects/devel">View project translations</a></li>
+<li class="3 last"><a href="/project/devel/ecosystem">Projects that extend this</a></li>
+</ul>  </div>
+  </div>
+</div>
+<div id="block-drupalorg-project-development" class="block block-drupalorg-project">
+<div class="block-inner">
+    <h2>Development</h2>
+  
+  <div class="content">
+    <ul class="links"><li class="0 first"><a href="/project/issues/search/devel?status%5B0%5D=8&amp;status%5B1%5D=13&amp;status%5B2%5D=14">View pending patches</a></li>
+<li class="1"><a href="https://git.drupalcode.org/project/devel">Browse code repository</a></li>
+<li class="2"><a href="/node/3236/commits">View commits</a></li>
+<li class="3"><a href="/project/devel/report-security-issue">Report a security vulnerability</a></li>
+<li class="4 last"><a href="/list-changes/devel">View change records</a></li>
+</ul>  </div>
+  </div>
+</div>
+  </div>
+          </div> <!-- /#column-right-region -->
+        </div> <!-- /#column-right -->
+      
+          </div>  </div> <!-- /#page -->
+
+  <div id="footer" role="contentinfo">
+            <div class="region region-footer">
+    <div id="block-drupalorg-crosssite-drupalorg-footer" class="block block-drupalorg-crosssite">
+<div class="block-inner">
+    
+  <div class="content">
+    <h4 class="element-invisible">News items</h4><ul class="drupal-news"><li class="0 first"><a href="https://www.drupal.org/news">News</a></li>
+<li class="1"><a href="https://www.drupal.org/planet" title="News from Drupal community members">Planet Drupal</a></li>
+<li class="2"><a href="https://www.drupal.org/social-media" title="Drupal on social media">Social media directory</a></li>
+<li class="3"><a href="https://www.drupal.org/security" title="Advisories from the security team">Security announcements</a></li>
+<li class="4 last"><a href="https://jobs.drupal.org/" title="Drupal Jobs">Jobs</a></li>
+</ul><h4 class="element-invisible">Our community</h4><ul class="community"><li class="0 first"><a href="https://drupal.org/community">Community</a></li>
+<li class="1"><a href="https://drupal.org/getting-involved" title="Learn how to contribute to the Drupal project">Getting involved</a></li>
+<li class="2"><span><a href="https://drupal.org/drupal-services" title="People and organizations offering Drupal services">Services</a>, <a href="https://drupal.org/training" title="People and organizations offering Drupal training">Training</a> & <a href="https://drupal.org/hosting" title="Organizations offering Drupal hosting">Hosting</a></span></li>
+<li class="3"><a href="https://groups.drupal.org/groups" title="groups.drupal.org">Groups &amp; Meetups</a></li>
+<li class="4"><a href="https://events.drupal.org" title="Upcoming and past DrupalCons">DrupalCon</a></li>
+<li class="5 last"><a href="https://drupal.org/dcoc" title="Drupal code of conduct">Code of conduct</a></li>
+</ul><h4 class="element-invisible">Documentation</h4><ul class="get-started"><li class="0 first"><a href="https://drupal.org/documentation" title="Documentation for working with Drupal">Documentation</a></li>
+<li class="1"><a href="https://www.drupal.org/docs/8">Drupal 8 docs</a></li>
+<li class="2"><a href="https://www.drupal.org/docs/7">Drupal 7 docs</a></li>
+<li class="3"><a href="https://www.drupal.org/documentation/develop">Developer docs</a></li>
+<li class="4 last"><a href="https://api.drupal.org/" title="Drupal API reference">api.drupal.org</a></li>
+</ul><h4 class="element-invisible">Drupal code base</h4><ul class="download-extend"><li class="0 first"><a href="https://drupal.org/download">Download &amp; Extend</a></li>
+<li class="1"><a href="https://drupal.org/project/drupal" title="Download the latest version of the Drupal software">Drupal core</a></li>
+<li class="2"><a href="https://drupal.org/project/project_module" title="Download add-on features and functionality">Modules</a></li>
+<li class="3"><a href="https://drupal.org/project/project_theme" title="Download pre-designed styles for Drupal">Themes</a></li>
+<li class="4 last"><a href="https://drupal.org/project/project_distribution" title="Download a pre-packaged Drupal site">Distributions</a></li>
+</ul><h4 class="element-invisible">Governance of community</h4><ul class="about"><li class="0 first"><a href="https://drupal.org/about">About</a></li>
+<li class="1"><a href="https://drupal.org/about/accessibility" title="Our committment to accessibility">Web accessibility</a></li>
+<li class="2"><a href="https://drupal.org/association" title="About the Drupal Association">The Drupal Association</a></li>
+<li class="3"><a href="https://drupal.org/drupalorg" title="About Drupal.org">About Drupal.org</a></li>
+<li class="4"><a href="https://drupal.org/terms" title="Drupal.org terms of service">Terms of service</a></li>
+<li class="5 last"><a href="https://drupal.org/privacy" title="Drupal.org privacy policy">Privacy policy</a></li>
+</ul>  </div>
+  </div>
+</div>
+<div id="block-block-77" class="block block-block">
+<div class="block-inner">
+    
+  <div class="content">
+    <p>Drupal is a <a href="http://drupal.com/trademark">registered trademark</a> of <a href="https://dri.es">Dries Buytaert</a>.</p>
+  </div>
+  </div>
+</div>
+  </div>
+      </div>
+    <div class="region region-page-bottom">
+    <script type="text/javascript">
+      (function(){
+          window._pxAppId = 'PXVnPBBfwe';
+          window._pxParam2 = '';
+          window._pxParam3 = '0';
+          var p = document.getElementsByTagName('script')[0],
+              s = document.createElement('script');
+          s.async = 1;
+          s.src = '/VnPBBfwe/init.js';
+          p.parentNode.insertBefore(s,p);
+      }());
+  </script>
+  <noscript>
+      <div style="position:fixed; top:0; left:0; display:none" width="1" height="1">
+          <img src="/VnPBBfwe/xhr/api/v1/collector/noScript.gif?appId=PXVnPBBfwe">
+      </div>
+  </noscript>  </div>
+
+<!--[if lte IE 9]>
+<script type="text/javascript" src="/files/advagg_js/js__79M6UrZjAw3oNGnUjsWip12JsvnUZmJGA3h9LI0kuzE__LqE6uSZqCOZhJYW910TDw_HTQzBKUPTZxunfaWkalq8__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js#ie9-" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);}"></script>
+<![endif]-->
+
+<!--[if gt IE 9]>
+<script type="text/javascript" src="/files/advagg_js/js__79M6UrZjAw3oNGnUjsWip12JsvnUZmJGA3h9LI0kuzE__LqE6uSZqCOZhJYW910TDw_HTQzBKUPTZxunfaWkalq8__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js#ie10+" defer="defer" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);}"></script>
+<![endif]-->
+
+<!--[if !IE]><!-->
+<script type="text/javascript" src="/files/advagg_js/js__79M6UrZjAw3oNGnUjsWip12JsvnUZmJGA3h9LI0kuzE__LqE6uSZqCOZhJYW910TDw_HTQzBKUPTZxunfaWkalq8__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer" onload="if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(true);}"></script>
+<!--<![endif]-->
+<script type="text/javascript" src="/files/advagg_js/js__qvxhs9hiTVr_USTpngJWnfdQEU8sbxmerZ1FBORD7ks__c_vdLVdm2dhTjV0-cjXbrVvnpDDp5m6xnNff8tSZ1fg__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__H5AFmq1RrXKsrazzPq_xPQPy4K0wUKqecPjczzRiTgQ__JIy-3lUpq3qC8JjvfOMkqOB8loYzuE93VQgLvC7HpVM__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer" onload="
+function advagg_mod_1() {
+  // Count how many times this function is called.
+  advagg_mod_1.count = ++advagg_mod_1.count || 1;
+  try {
+    if (advagg_mod_1.count <= 40) {
+      init_drupal_core_settings();
+
+      // Set this to 100 so that this function only runs once.
+      advagg_mod_1.count = 100;
+    }
+  }
+  catch(e) {
+    if (advagg_mod_1.count >= 40) {
+      // Throw the exception if this still fails after running 40 times.
+      throw e;
+    }
+    else {
+      // Try again in 1 ms.
+      window.setTimeout(advagg_mod_1, 1);
+    }
+  }
+}
+function advagg_mod_1_check() {
+  if (window.init_drupal_core_settings && window.jQuery && window.Drupal) {
+    advagg_mod_1();
+  }
+  else {
+    window.setTimeout(advagg_mod_1_check, 1);
+  }
+}
+advagg_mod_1_check();"></script>
+<script type="text/javascript" src="/files/advagg_js/js__W3HVetagCYpKE0fh-1m9ldkYrnM7EKUfayUOkYfG5ns__WuK1hQPJATa9bKz9C-kkuJb4wU7eT0t_GOkJsnF_TuM__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__ENYUZMe5BHbMK8_pF3i18y1CtuMx_ItPRfjUOF7vUds__MXaxQPtP7z2LRCIe-IOxTRyNSvHNhJSb9SX1jpwq-Z8__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__dTRSuW27RiJte-z_L4Px_rno5dZsdWKiU3HtuBiTSmc__1heMEGpuuHZnihe04BOr3X2vIc8bRMaEUwDqgCjyFsM__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" defer="defer" async="async" src="//www.google-analytics.com/analytics.js"></script>
+<script type="text/javascript" src="/files/advagg_js/js__gAfkvwHTHdM_vebZo2iTQLdnpDeigD9kUQ7XFOcxI1Y__u_TjmUY7ErAgI27oqHW4ddlsfR2hV4oqwbv5SYPoeRU__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer" async="async"></script>
+<script type="text/javascript" src="/files/advagg_js/js__j3PutbZld3YcwVNdish7PCY6mEQ1Jhd55jXi-jFIFVM__adlFHdpI9GSkFm0i35Q_u89uJIK4HcXK9OOvKRREP8A__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__HZ7udcaZuzYLRB7H2Kyfn7yRN7NJNVw2GpKkiKp-BjA__DvOwCoJx0iaBnB2-Nz3JkxkhCqstaWHa9tJMaDT-HVY__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__noNy8NHo7ROx_M-MhKEDGtU6-WXv5OQXFvNcWNxJ8u4__HMS-Vq2AzhXQo-nK7zz37ta59j08u3IYO4jlTu_gmSI__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__pLKQd4r7OrHglE7Qkqw53K2UXCqQdhqQ9v0cz7hMCQY__OErfYuQdGbFHcCoLoUW_ESSvaumApNojzjJit8-2xcw__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript" src="/files/advagg_js/js__hHUWFbMAa11eJtx5V0ym9o0YBsB1udk34qUT5wr1ihI__v_laEepDqP2anEEp6ywEdbWv-xdkaC1VUNQ6A-wrXno__YaNGWokqa69Wq8hHbkE322PVJ8I-GmpfBsT8LGsMpcI.js" defer="defer"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function init_drupal_core_settings() {jQuery.extend(Drupal.settings,{"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bluecheese","theme_token":"ekobKQuFYVIBybd7d4ftw6n2u5Fw0qpPkqVwOqPB3sQ"},"colorbox":{"transition":"elastic","speed":"100","opacity":"0.85","slideshow":false,"slideshowAuto":true,"slideshowSpeed":"2500","slideshowStart":"start slideshow","slideshowStop":"stop slideshow","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","overlayClose":true,"returnFocus":true,"maxWidth":"98%","maxHeight":"98%","initialWidth":"300","initialHeight":"250","fixed":true,"scrolling":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1},"urlIsAjaxTrusted":{"\/project\/devel":true,"\/project\/issues\/devel":true},"d3":{"inventory":{"view-d3-vis-e4e77c95c4c9f46d82620fcbc1bb470c":{"id":"view-d3-vis-e4e77c95c4c9f46d82620fcbc1bb470c","type":"sparkline","rows":[["2017-06-11T00:00:00+00:00","2"],["2017-06-18T00:00:00+00:00","1"],["2017-06-25T00:00:00+00:00","2"],["2017-07-02T00:00:00+00:00","5"],["2017-07-09T00:00:00+00:00","1"],["2017-07-16T00:00:00+00:00","1"],["2017-07-23T00:00:00+00:00","2"],["2017-07-30T00:00:00+00:00","6"],["2017-08-06T00:00:00+00:00","2"],["2017-08-13T00:00:00+00:00","3"],["2017-08-20T00:00:00+00:00","3"],["2017-08-27T00:00:00+00:00","3"],["2017-09-03T00:00:00+00:00","2"],["2017-09-10T00:00:00+00:00","1"],["2017-09-17T00:00:00+00:00","0"],["2017-09-24T00:00:00+00:00","2"],["2017-10-01T00:00:00+00:00","2"],["2017-10-08T00:00:00+00:00","4"],["2017-10-15T00:00:00+00:00","1"],["2017-10-22T00:00:00+00:00","1"],["2017-10-29T00:00:00+00:00","0"],["2017-11-05T00:00:00+00:00","2"],["2017-11-12T00:00:00+00:00","2"],["2017-11-19T00:00:00+00:00","1"],["2017-11-26T00:00:00+00:00","0"],["2017-12-03T00:00:00+00:00","2"],["2017-12-10T00:00:00+00:00","2"],["2017-12-17T00:00:00+00:00","3"],["2017-12-24T00:00:00+00:00","0"],["2017-12-31T00:00:00+00:00","7"],["2018-01-07T00:00:00+00:00","1"],["2018-01-14T00:00:00+00:00","2"],["2018-01-21T00:00:00+00:00","3"],["2018-01-28T00:00:00+00:00","2"],["2018-02-04T00:00:00+00:00","1"],["2018-02-11T00:00:00+00:00","0"],["2018-02-18T00:00:00+00:00","2"],["2018-02-25T00:00:00+00:00","2"],["2018-03-04T00:00:00+00:00","2"],["2018-03-11T00:00:00+00:00","2"],["2018-03-18T00:00:00+00:00","0"],["2018-03-25T00:00:00+00:00","0"],["2018-04-01T00:00:00+00:00","3"],["2018-04-08T00:00:00+00:00","0"],["2018-04-15T00:00:00+00:00","2"],["2018-04-22T00:00:00+00:00","7"],["2018-04-29T00:00:00+00:00","1"],["2018-05-06T00:00:00+00:00","3"],["2018-05-13T00:00:00+00:00","0"],["2018-05-20T00:00:00+00:00","0"],["2018-05-27T00:00:00+00:00","0"],["2018-06-03T00:00:00+00:00","1"],["2018-06-10T00:00:00+00:00","0"],["2018-06-17T00:00:00+00:00","0"],["2018-06-24T00:00:00+00:00","0"],["2018-07-01T00:00:00+00:00","1"],["2018-07-08T00:00:00+00:00","0"],["2018-07-15T00:00:00+00:00","1"],["2018-07-22T00:00:00+00:00","3"],["2018-07-29T00:00:00+00:00","3"],["2018-08-05T00:00:00+00:00","1"],["2018-08-12T00:00:00+00:00","0"],["2018-08-19T00:00:00+00:00","1"],["2018-08-26T00:00:00+00:00","1"],["2018-09-02T00:00:00+00:00","0"],["2018-09-09T00:00:00+00:00","1"],["2018-09-16T00:00:00+00:00","4"],["2018-09-23T00:00:00+00:00","4"],["2018-09-30T00:00:00+00:00","2"],["2018-10-07T00:00:00+00:00","2"],["2018-10-14T00:00:00+00:00","2"],["2018-10-21T00:00:00+00:00","1"],["2018-10-28T00:00:00+00:00","0"],["2018-11-04T00:00:00+00:00","2"],["2018-11-11T00:00:00+00:00","1"],["2018-11-18T00:00:00+00:00","3"],["2018-11-25T00:00:00+00:00","0"],["2018-12-02T00:00:00+00:00","1"],["2018-12-09T00:00:00+00:00","3"],["2018-12-16T00:00:00+00:00","1"],["2018-12-23T00:00:00+00:00","1"],["2018-12-30T00:00:00+00:00","0"],["2019-01-06T00:00:00+00:00","2"],["2019-01-13T00:00:00+00:00","0"],["2019-01-20T00:00:00+00:00","1"],["2019-01-27T00:00:00+00:00","3"],["2019-02-03T00:00:00+00:00","2"],["2019-02-10T00:00:00+00:00","7"],["2019-02-17T00:00:00+00:00","2"],["2019-02-24T00:00:00+00:00","4"],["2019-03-03T00:00:00+00:00","1"],["2019-03-10T00:00:00+00:00","3"],["2019-03-17T00:00:00+00:00","3"],["2019-03-24T00:00:00+00:00","2"],["2019-03-31T00:00:00+00:00","9"],["2019-04-07T00:00:00+00:00","3"],["2019-04-14T00:00:00+00:00","5"],["2019-04-21T00:00:00+00:00","4"],["2019-04-28T00:00:00+00:00","1"],["2019-05-05T00:00:00+00:00","2"],["2019-05-12T00:00:00+00:00","2"],["2019-05-19T00:00:00+00:00","0"],["2019-05-26T00:00:00+00:00","0"],["2019-06-02T00:00:00+00:00","0"]],"width":"100","height":"20"},"view-d3-vis-f31ba0cb6ecdd3ef6b96f1385ea68efe":{"id":"view-d3-vis-f31ba0cb6ecdd3ef6b96f1385ea68efe","type":"sparkline","rows":[["2017-06-11T00:00:00+00:00","0"],["2017-06-25T00:00:00+00:00","0"],["2017-07-02T00:00:00+00:00","100"],["2017-07-09T00:00:00+00:00","60"],["2017-07-16T00:00:00+00:00","100"],["2017-07-23T00:00:00+00:00","100"],["2017-07-30T00:00:00+00:00","50"],["2017-08-06T00:00:00+00:00","33"],["2017-08-13T00:00:00+00:00","50"],["2017-08-20T00:00:00+00:00","50"],["2017-08-27T00:00:00+00:00","0"],["2017-09-03T00:00:00+00:00","100"],["2017-09-10T00:00:00+00:00","0"],["2017-09-17T00:00:00+00:00","100"],["2017-10-01T00:00:00+00:00","50"],["2017-10-08T00:00:00+00:00","100"],["2017-10-15T00:00:00+00:00","100"],["2017-10-22T00:00:00+00:00","0"],["2017-10-29T00:00:00+00:00","0"],["2017-11-12T00:00:00+00:00","50"],["2017-11-19T00:00:00+00:00","0"],["2017-11-26T00:00:00+00:00","100"],["2017-12-10T00:00:00+00:00","50"],["2017-12-17T00:00:00+00:00","50"],["2017-12-24T00:00:00+00:00","67"],["2018-01-07T00:00:00+00:00","29"],["2018-01-14T00:00:00+00:00","0"],["2018-01-21T00:00:00+00:00","0"],["2018-01-28T00:00:00+00:00","0"],["2018-02-04T00:00:00+00:00","50"],["2018-02-11T00:00:00+00:00","0"],["2018-02-25T00:00:00+00:00","100"],["2018-03-04T00:00:00+00:00","0"],["2018-03-11T00:00:00+00:00","0"],["2018-03-18T00:00:00+00:00","0"],["2018-04-08T00:00:00+00:00","0"],["2018-04-22T00:00:00+00:00","100"],["2018-04-29T00:00:00+00:00","100"],["2018-05-06T00:00:00+00:00","0"],["2018-05-13T00:00:00+00:00","67"],["2018-06-10T00:00:00+00:00","100"],["2018-07-08T00:00:00+00:00","0"],["2018-07-22T00:00:00+00:00","0"],["2018-07-29T00:00:00+00:00","100"],["2018-08-05T00:00:00+00:00","0"],["2018-08-12T00:00:00+00:00","100"],["2018-08-26T00:00:00+00:00","0"],["2018-09-02T00:00:00+00:00","0"],["2018-09-16T00:00:00+00:00","0"],["2018-09-23T00:00:00+00:00","50"],["2018-09-30T00:00:00+00:00","100"],["2018-10-07T00:00:00+00:00","0"],["2018-10-14T00:00:00+00:00","50"],["2018-10-21T00:00:00+00:00","100"],["2018-10-28T00:00:00+00:00","100"],["2018-11-11T00:00:00+00:00","50"],["2018-11-18T00:00:00+00:00","0"],["2018-11-25T00:00:00+00:00","0"],["2018-12-09T00:00:00+00:00","100"],["2018-12-16T00:00:00+00:00","33"],["2018-12-23T00:00:00+00:00","0"],["2018-12-30T00:00:00+00:00","0"],["2019-01-13T00:00:00+00:00","100"],["2019-01-27T00:00:00+00:00","0"],["2019-02-03T00:00:00+00:00","0"],["2019-02-10T00:00:00+00:00","100"],["2019-02-17T00:00:00+00:00","29"],["2019-02-24T00:00:00+00:00","100"],["2019-03-03T00:00:00+00:00","100"],["2019-03-10T00:00:00+00:00","0"],["2019-03-17T00:00:00+00:00","33"],["2019-03-24T00:00:00+00:00","67"],["2019-03-31T00:00:00+00:00","50"],["2019-04-07T00:00:00+00:00","38"],["2019-04-14T00:00:00+00:00","67"],["2019-04-21T00:00:00+00:00","75"],["2019-04-28T00:00:00+00:00","100"],["2019-05-05T00:00:00+00:00","100"],["2019-05-12T00:00:00+00:00","100"],["2019-05-19T00:00:00+00:00","50"]],"width":"100","height":"20"},"view-d3-vis-8cb799e019642657c7c325e2bcbd8c57":{"id":"view-d3-vis-8cb799e019642657c7c325e2bcbd8c57","type":"sparkline","rows":[["2017-06-11T00:00:00+00:00","0"],["2017-06-25T00:00:00+00:00","0"],["2017-07-02T00:00:00+00:00","19"],["2017-07-09T00:00:00+00:00","32"],["2017-07-16T00:00:00+00:00","35"],["2017-07-23T00:00:00+00:00","179"],["2017-07-30T00:00:00+00:00","48"],["2017-08-06T00:00:00+00:00","1"],["2017-08-13T00:00:00+00:00","17"],["2017-08-20T00:00:00+00:00","3"],["2017-08-27T00:00:00+00:00","0"],["2017-09-03T00:00:00+00:00","75"],["2017-09-10T00:00:00+00:00","0"],["2017-09-17T00:00:00+00:00","74"],["2017-10-01T00:00:00+00:00","0"],["2017-10-08T00:00:00+00:00","56"],["2017-10-15T00:00:00+00:00","17"],["2017-10-22T00:00:00+00:00","0"],["2017-10-29T00:00:00+00:00","0"],["2017-11-12T00:00:00+00:00","26"],["2017-11-19T00:00:00+00:00","0"],["2017-11-26T00:00:00+00:00","23"],["2017-12-10T00:00:00+00:00","1"],["2017-12-17T00:00:00+00:00","18"],["2017-12-24T00:00:00+00:00","18"],["2018-01-07T00:00:00+00:00","4"],["2018-01-14T00:00:00+00:00","0"],["2018-01-21T00:00:00+00:00","0"],["2018-01-28T00:00:00+00:00","0"],["2018-02-04T00:00:00+00:00","0"],["2018-02-11T00:00:00+00:00","0"],["2018-02-25T00:00:00+00:00","72"],["2018-03-04T00:00:00+00:00","0"],["2018-03-11T00:00:00+00:00","0"],["2018-03-18T00:00:00+00:00","0"],["2018-04-08T00:00:00+00:00","0"],["2018-04-22T00:00:00+00:00","131"],["2018-04-29T00:00:00+00:00","33"],["2018-05-06T00:00:00+00:00","0"],["2018-05-13T00:00:00+00:00","15"],["2018-06-10T00:00:00+00:00","51"],["2018-07-08T00:00:00+00:00","0"],["2018-07-22T00:00:00+00:00","0"],["2018-07-29T00:00:00+00:00","0"],["2018-08-05T00:00:00+00:00","0"],["2018-08-12T00:00:00+00:00","52"],["2018-08-26T00:00:00+00:00","0"],["2018-09-02T00:00:00+00:00","0"],["2018-09-16T00:00:00+00:00","0"],["2018-09-23T00:00:00+00:00","70"],["2018-09-30T00:00:00+00:00","5"],["2018-10-07T00:00:00+00:00","0"],["2018-10-14T00:00:00+00:00","0"],["2018-10-21T00:00:00+00:00","2"],["2018-10-28T00:00:00+00:00","7"],["2018-11-11T00:00:00+00:00","4"],["2018-11-18T00:00:00+00:00","0"],["2018-11-25T00:00:00+00:00","0"],["2018-12-09T00:00:00+00:00","5"],["2018-12-16T00:00:00+00:00","55"],["2018-12-23T00:00:00+00:00","0"],["2018-12-30T00:00:00+00:00","0"],["2019-01-13T00:00:00+00:00","36"],["2019-01-27T00:00:00+00:00","0"],["2019-02-03T00:00:00+00:00","0"],["2019-02-10T00:00:00+00:00","1"],["2019-02-17T00:00:00+00:00","2"],["2019-02-24T00:00:00+00:00","107"],["2019-03-03T00:00:00+00:00","47"],["2019-03-10T00:00:00+00:00","0"],["2019-03-17T00:00:00+00:00","44"],["2019-03-24T00:00:00+00:00","2"],["2019-03-31T00:00:00+00:00","1"],["2019-04-07T00:00:00+00:00","11"],["2019-04-14T00:00:00+00:00","107"],["2019-04-21T00:00:00+00:00","6"],["2019-04-28T00:00:00+00:00","75"],["2019-05-05T00:00:00+00:00","209"],["2019-05-12T00:00:00+00:00","113"],["2019-05-19T00:00:00+00:00","3"]],"width":"100","height":"20"},"view-d3-vis-338eb279a55b7584f3449db97c66dea2":{"id":"view-d3-vis-338eb279a55b7584f3449db97c66dea2","type":"sparkline","rows":[["2017-06-11T00:00:00+00:00","105"],["2017-06-18T00:00:00+00:00","105"],["2017-06-25T00:00:00+00:00","106"],["2017-07-02T00:00:00+00:00","108"],["2017-07-09T00:00:00+00:00","106"],["2017-07-16T00:00:00+00:00","107"],["2017-07-23T00:00:00+00:00","105"],["2017-07-30T00:00:00+00:00","106"],["2017-08-06T00:00:00+00:00","106"],["2017-08-13T00:00:00+00:00","107"],["2017-08-20T00:00:00+00:00","109"],["2017-08-27T00:00:00+00:00","110"],["2017-09-03T00:00:00+00:00","110"],["2017-09-10T00:00:00+00:00","110"],["2017-09-17T00:00:00+00:00","108"],["2017-09-24T00:00:00+00:00","108"],["2017-10-01T00:00:00+00:00","109"],["2017-10-08T00:00:00+00:00","103"],["2017-10-15T00:00:00+00:00","106"],["2017-10-22T00:00:00+00:00","100"],["2017-10-29T00:00:00+00:00","100"],["2017-11-05T00:00:00+00:00","101"],["2017-11-12T00:00:00+00:00","101"],["2017-11-19T00:00:00+00:00","102"],["2017-11-26T00:00:00+00:00","101"],["2017-12-03T00:00:00+00:00","102"],["2017-12-10T00:00:00+00:00","102"],["2017-12-17T00:00:00+00:00","103"],["2017-12-24T00:00:00+00:00","102"],["2017-12-31T00:00:00+00:00","103"],["2018-01-07T00:00:00+00:00","103"],["2018-01-14T00:00:00+00:00","105"],["2018-01-21T00:00:00+00:00","105"],["2018-01-28T00:00:00+00:00","103"],["2018-02-04T00:00:00+00:00","104"],["2018-02-11T00:00:00+00:00","104"],["2018-02-18T00:00:00+00:00","103"],["2018-02-25T00:00:00+00:00","105"],["2018-03-04T00:00:00+00:00","106"],["2018-03-11T00:00:00+00:00","108"],["2018-03-18T00:00:00+00:00","108"],["2018-03-25T00:00:00+00:00","106"],["2018-04-01T00:00:00+00:00","108"],["2018-04-08T00:00:00+00:00","108"],["2018-04-15T00:00:00+00:00","108"],["2018-04-22T00:00:00+00:00","104"],["2018-04-29T00:00:00+00:00","104"],["2018-05-06T00:00:00+00:00","104"],["2018-05-13T00:00:00+00:00","104"],["2018-05-20T00:00:00+00:00","104"],["2018-05-27T00:00:00+00:00","103"],["2018-06-03T00:00:00+00:00","101"],["2018-06-10T00:00:00+00:00","101"],["2018-06-17T00:00:00+00:00","101"],["2018-06-24T00:00:00+00:00","101"],["2018-07-01T00:00:00+00:00","100"],["2018-07-08T00:00:00+00:00","96"],["2018-07-15T00:00:00+00:00","97"],["2018-07-22T00:00:00+00:00","97"],["2018-07-29T00:00:00+00:00","98"],["2018-08-05T00:00:00+00:00","98"],["2018-08-12T00:00:00+00:00","98"],["2018-08-19T00:00:00+00:00","98"],["2018-08-26T00:00:00+00:00","100"],["2018-09-02T00:00:00+00:00","100"],["2018-09-09T00:00:00+00:00","100"],["2018-09-16T00:00:00+00:00","103"],["2018-09-23T00:00:00+00:00","103"],["2018-09-30T00:00:00+00:00","104"],["2018-10-07T00:00:00+00:00","104"],["2018-10-14T00:00:00+00:00","102"],["2018-10-21T00:00:00+00:00","101"],["2018-10-28T00:00:00+00:00","101"],["2018-11-04T00:00:00+00:00","102"],["2018-11-11T00:00:00+00:00","103"],["2018-11-18T00:00:00+00:00","104"],["2018-11-25T00:00:00+00:00","104"],["2018-12-02T00:00:00+00:00","105"],["2018-12-09T00:00:00+00:00","106"],["2018-12-16T00:00:00+00:00","107"],["2018-12-23T00:00:00+00:00","108"],["2018-12-30T00:00:00+00:00","108"],["2019-01-06T00:00:00+00:00","110"],["2019-01-13T00:00:00+00:00","108"],["2019-01-20T00:00:00+00:00","110"],["2019-01-27T00:00:00+00:00","113"],["2019-02-03T00:00:00+00:00","114"],["2019-02-10T00:00:00+00:00","115"],["2019-02-17T00:00:00+00:00","113"],["2019-02-24T00:00:00+00:00","115"],["2019-03-03T00:00:00+00:00","115"],["2019-03-10T00:00:00+00:00","113"],["2019-03-17T00:00:00+00:00","113"],["2019-03-24T00:00:00+00:00","112"],["2019-03-31T00:00:00+00:00","116"],["2019-04-07T00:00:00+00:00","114"],["2019-04-14T00:00:00+00:00","87"],["2019-04-21T00:00:00+00:00","36"],["2019-04-28T00:00:00+00:00","36"],["2019-05-05T00:00:00+00:00","34"],["2019-05-12T00:00:00+00:00","34"],["2019-05-19T00:00:00+00:00","34"],["2019-05-26T00:00:00+00:00","34"],["2019-06-02T00:00:00+00:00","34"]],"width":"100","height":"20"},"view-d3-vis-4f7e7aa7e7b65a320e4f056ac35eb701":{"id":"view-d3-vis-4f7e7aa7e7b65a320e4f056ac35eb701","type":"sparkline","rows":[["2017-06-11T00:00:00+00:00","3"],["2017-06-18T00:00:00+00:00","8"],["2017-06-25T00:00:00+00:00","7"],["2017-07-02T00:00:00+00:00","12"],["2017-07-09T00:00:00+00:00","8"],["2017-07-16T00:00:00+00:00","8"],["2017-07-23T00:00:00+00:00","9"],["2017-07-30T00:00:00+00:00","8"],["2017-08-06T00:00:00+00:00","3"],["2017-08-13T00:00:00+00:00","10"],["2017-08-20T00:00:00+00:00","6"],["2017-08-27T00:00:00+00:00","8"],["2017-09-03T00:00:00+00:00","5"],["2017-09-10T00:00:00+00:00","4"],["2017-09-17T00:00:00+00:00","6"],["2017-09-24T00:00:00+00:00","6"],["2017-10-01T00:00:00+00:00","7"],["2017-10-08T00:00:00+00:00","12"],["2017-10-15T00:00:00+00:00","7"],["2017-10-22T00:00:00+00:00","10"],["2017-10-29T00:00:00+00:00","4"],["2017-11-05T00:00:00+00:00","6"],["2017-11-12T00:00:00+00:00","5"],["2017-11-19T00:00:00+00:00","12"],["2017-11-26T00:00:00+00:00","6"],["2017-12-03T00:00:00+00:00","3"],["2017-12-10T00:00:00+00:00","7"],["2017-12-17T00:00:00+00:00","5"],["2017-12-24T00:00:00+00:00","6"],["2017-12-31T00:00:00+00:00","9"],["2018-01-07T00:00:00+00:00","2"],["2018-01-14T00:00:00+00:00","5"],["2018-01-21T00:00:00+00:00","7"],["2018-01-28T00:00:00+00:00","10"],["2018-02-04T00:00:00+00:00","7"],["2018-02-11T00:00:00+00:00","3"],["2018-02-18T00:00:00+00:00","8"],["2018-02-25T00:00:00+00:00","10"],["2018-03-04T00:00:00+00:00","5"],["2018-03-11T00:00:00+00:00","5"],["2018-03-18T00:00:00+00:00","3"],["2018-03-25T00:00:00+00:00","11"],["2018-04-01T00:00:00+00:00","8"],["2018-04-08T00:00:00+00:00","3"],["2018-04-15T00:00:00+00:00","11"],["2018-04-22T00:00:00+00:00","14"],["2018-04-29T00:00:00+00:00","10"],["2018-05-06T00:00:00+00:00","9"],["2018-05-13T00:00:00+00:00","7"],["2018-05-20T00:00:00+00:00","2"],["2018-05-27T00:00:00+00:00","6"],["2018-06-03T00:00:00+00:00","5"],["2018-06-10T00:00:00+00:00","2"],["2018-06-17T00:00:00+00:00","4"],["2018-06-24T00:00:00+00:00","5"],["2018-07-01T00:00:00+00:00","7"],["2018-07-08T00:00:00+00:00","3"],["2018-07-15T00:00:00+00:00","4"],["2018-07-22T00:00:00+00:00","5"],["2018-07-29T00:00:00+00:00","8"],["2018-08-05T00:00:00+00:00","6"],["2018-08-12T00:00:00+00:00","2"],["2018-08-19T00:00:00+00:00","5"],["2018-08-26T00:00:00+00:00","4"],["2018-09-02T00:00:00+00:00","3"],["2018-09-09T00:00:00+00:00","7"],["2018-09-16T00:00:00+00:00","9"],["2018-09-23T00:00:00+00:00","12"],["2018-09-30T00:00:00+00:00","7"],["2018-10-07T00:00:00+00:00","9"],["2018-10-14T00:00:00+00:00","13"],["2018-10-21T00:00:00+00:00","6"],["2018-10-28T00:00:00+00:00","3"],["2018-11-04T00:00:00+00:00","7"],["2018-11-11T00:00:00+00:00","6"],["2018-11-18T00:00:00+00:00","6"],["2018-11-25T00:00:00+00:00","7"],["2018-12-02T00:00:00+00:00","5"],["2018-12-09T00:00:00+00:00","5"],["2018-12-16T00:00:00+00:00","6"],["2018-12-23T00:00:00+00:00","2"],["2018-12-30T00:00:00+00:00","2"],["2019-01-06T00:00:00+00:00","5"],["2019-01-13T00:00:00+00:00","4"],["2019-01-20T00:00:00+00:00","5"],["2019-01-27T00:00:00+00:00","6"],["2019-02-03T00:00:00+00:00","21"],["2019-02-10T00:00:00+00:00","17"],["2019-02-17T00:00:00+00:00","12"],["2019-02-24T00:00:00+00:00","14"],["2019-03-03T00:00:00+00:00","6"],["2019-03-10T00:00:00+00:00","8"],["2019-03-17T00:00:00+00:00","22"],["2019-03-24T00:00:00+00:00","18"],["2019-03-31T00:00:00+00:00","21"],["2019-04-07T00:00:00+00:00","14"],["2019-04-14T00:00:00+00:00","14"],["2019-04-21T00:00:00+00:00","15"],["2019-04-28T00:00:00+00:00","11"],["2019-05-05T00:00:00+00:00","13"],["2019-05-12T00:00:00+00:00","11"],["2019-05-19T00:00:00+00:00","4"],["2019-05-26T00:00:00+00:00","3"],["2019-06-02T00:00:00+00:00","1"]],"width":"100","height":"20"}}}}); 
+if(jQuery.isFunction(jQuery.holdReady)){jQuery.holdReady(false);}} if(window.jQuery && window.Drupal){init_drupal_core_settings();}
+//--><!]]>
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e671e25255","applicationID":"4266189","transactionName":"Z1AEbREHVxAFU0RRV14aJ1oXD1YNS15fXF1vRQdeBjlPCgFH","queueTime":0,"applicationTime":1297,"atts":"SxcHG1kdRB4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
